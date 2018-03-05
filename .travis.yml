@@ -6,6 +6,10 @@ python:
 # command to install dependencies
 install:
   - pip3 install retrying
+  - pip3 install python-coveralls
 # command to run tests
 script:
   - make # or py.test for Python versions 3.5 and below
+
+after_success:
+  - coveralls
