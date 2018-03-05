@@ -14,3 +14,6 @@ class TestBasics(unittest.TestCase):
     def test_toomany(self):
         with self.assertRaises(TypeError):
             result = rpn.calculate('1 2 3 +')
+
+if __name__ == '__main__':
+    unittest.main()
